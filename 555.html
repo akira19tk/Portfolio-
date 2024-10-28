@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Kanit', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #007bff;
+        }
+
+        /* Section Styles */
+        section {
+            min-height: 100vh;
+            padding: 80px 20px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Landing Page Styles */
+        #landing {
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            width: 100%;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        /* About Section Styles */
+        #about {
+            background-color: #ffffff;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        
+
+        /* Education Section Styles */
+        #education {
+            background-color: #f8f9fa;
+        }
+
+        .timeline {
+            margin-top: 2rem;
+        }
+
+        .timeline-item {
+            border-left: 2px solid #007bff;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background: #007bff;
+            border-radius: 50%;
+            position: absolute;
+            left: -7px;
+            top: 25px;
+        }
+
+        /* Skills Section Styles */
+        #skills {
+            background-color: #ffffff;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .skill-card {
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .skill-category {
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: #007bff;
+        }
+
+        /* Contact Section Styles */
+        #contact {
+            background-color: #f8f9fa;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Common Styles */
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-top: 2rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: #007bff;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#landing">หน้าแรก</a>
+            <a href="#about">เกี่ยวกับฉัน</a>
+            <a href="#education">การศึกษา</a>
+            <a href="#skills">ทักษะ</a>
+            <a href="#contact">ติดต่อ</a>
+        </div>
+    </nav>
+
+    <!-- Landing Page Section -->
+    <section id="landing">
+        <div class="container">
+            <div class="hero-content">
+                <h1>HELLOOOO</h1>
+                <p>Welcome to my Portfolio</p>
+                <img src="https://i.imgur.com/RRxajlH.jpeg"width="358" height="400">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>Let's get to know each other more ^^ </p>
+            </div>
+            <div class="about-grid">
+                <div>
+                    <div class="profile-img"></div>
+                    <img src="https://i.imgur.com/vwQZMH5.jpeg" style="border-radius:50%;" width="358" height="400" >
+                </div>
+                <div>
+                    <h3>Personal Information</h3>
+                    <p>Name-Surname : Thanyagorn Khajornsakwongwai</p>
+                    <p>Nickname : Poarch</p>
+                    <p>Date of Birth : December 1,2004</p>
+                    <p>Age : 20 years old </p>
+                    <p>Nationality : Thai Ethnicity : Thai
+                    
+                    <p>Goal : Want to develop programming skills to pursue a career and support my family.</p>
+                    <p>Interest : Interested in game development and robotics
+                    <p>Love : Enjoy gardening and taking care of animals</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <div class="section-title">
+                <h2>Education</h2>
+                <p>Education History</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Institution : King Mongkut's University of Teachnology Thnburi (KMUTT)</h3>
+                    <p>Major : Computer Engineering</p>
+                    <p>Academic Year : 2024 - Present</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>School : Niyomsilp Anusorn </h3>
+                    <p>Program : Math-Science </p>
+                    <p>Graduated in : 2022 </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>Skill</h2>
+                <p>My abilities and skills</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3 class="skill-category">Programming</h3>
+                    <ul>
+                        <li>C Programming</li>
+                        
+                        <!-- เพิ่มทักษะอื่นๆ -->
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3 class="skill-category">Tools & Technologies</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>VS Code</li>
+                        <li>Figma</li>
+                        <!-- เพิ่มทักษะอื่นๆ -->
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3 class="skill-category">Soft Skills</h3>
+                    <ul>
+                        <li>Teamwork</li>
+                        <li>Problem solving</li>
+                        <li>Communication</li>
+                        <!-- เพิ่มทักษะอื่นๆ -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact</h2>
+                <p>Contact Information</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span>📧</span>
+                        <p>akira19tk@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <span>📱</span>
+                        <p>0623945164</p>
+                    </div>
+                    <div class="contact-item">
+                        <span>📍</span>
+                        <p>722/1 ,Moo1, Sub-district : Tha Rong, District : Wichiraburi, Province : Phetchabun, Pastal Code : 67130 </p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <!-- เพิ่มลิงก์โซเชียลมีเดียที่นี่ -->
+                    https://www.facebook.com/profile.php?id=100070604850124
+                </div>
+            </div>
+        </div>
+    </section>
